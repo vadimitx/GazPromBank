@@ -56,6 +56,62 @@
 }
 /* ======================================heder-menu============================ */
 
+.wraper{
+ 	height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-bottom: solid;
+}
+.header-menu-btn{
+	width: 50%;
+	display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.header-menu{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-menu li {
+    display: inline-block;
+    margin: auto;
+}
+.header-menu a {        
+    font-size: 14px;    
+    font-weight: 800;    
+    margin-right: 20px;
+    color: grey;
+    display: block;  
+    text-decoration: none;
+}
+.header-menu li a:hover {
+	color: #5252ff;
+}
+.btn-call{
+	margin-right: 20px;
+	width: 120px;
+}
+a.make-a-call {
+	background: none;
+    border-radius: 50px;
+    color: gray;    
+    font-size: 14px; 
+    margin: 0 auto;   
+    text-decoration: none;    
+    transition: all 0.3s;    
+    border: 2px solid #d8d8d8;
+    display: block;
+    text-align: center;
+    line-height: 2.5; 
+}
+.make-a-call:hover {
+    background: black;
+}
+
+/* ======================================media================================ */
+
 @media (max-width: 900px) {
-  .heder {display: none;}
+  .header {display: none;}
 }
