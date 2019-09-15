@@ -228,10 +228,9 @@ a.make-a-call {
 .block-two__container1__box, .block-two__container2__box, .block-two__container3__box, .block-two__container4__box{
     text-align: -webkit-center;
 }
-.block-two__container__box__img{
+.block-two__container__box__img img{
     height: 60px; 
     width: 106px;
-    background: #d8d8d8;
     margin-bottom: 10px;
 }
 .block-two__container__box__title{
@@ -271,10 +270,9 @@ a.make-a-call {
     justify-content: center;
     box-shadow: 6px 7px 10px 4px #f0f0f0;
 }
-.block-three__container__box__img{
+.block-three__container__box__img img{
     height: 67px; 
     width: 68px;
-    background: #d8d8d8;
     margin-right: 8px;
 }
 .block-three__container__box__title{
@@ -325,11 +323,36 @@ a.make-a-call {
 }
 .block-four__slider{
     width: 640px;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    height: 200px;
     background: lightgray;
+    /*height: 200px;*/
+    position: relative;
+}
+.slider .slick-slide {
+    height: 200px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 80px;
+}
+.slick-dots {
+    position: absolute;
+    width: 100%;   
+    text-align: center;
+    bottom: 20px;
+}
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #797979;
+    background: white;
+    outline: none;
 }
 /* ===================================block-five============================== */
 .block-five{
@@ -347,10 +370,9 @@ a.make-a-call {
     box-shadow: 6px 7px 10px 4px #f0f0f0;
     padding: 8px;
 }
-.block-five__container__img{
+.block-five__container__img img{
     width: 70px;
     height: 82px;
-    background: #eaeaea;
     margin-right: 10px;
 }
 .block-five__container__left-box{
@@ -463,12 +485,27 @@ a.button {
 .footer{
     background: #eaeaea;
     padding-bottom: 30px;
-}
-.footer__container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.footer__container{
+	margin-top: 60px;
+    width: 640px;
+}
+.footer__menu-block li {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+.footer__menu-block a{        
+    color: #7d7d7d;
+    text-decoration: none;
+}
+.footer__menu-block li a:hover{
+	color: #aeaeae;
+	
+}
+
 .input{
     display: flex;
     align-items: center;
@@ -478,7 +515,6 @@ a.button {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-right: 5px;
 }
 
 /* ======================================media================================ */
