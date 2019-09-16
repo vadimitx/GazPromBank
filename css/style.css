@@ -315,16 +315,27 @@ a.make-a-call {
     box-shadow: 6px 7px 10px 4px #f0f0f0;
 }
 /* =================================block-four============================== */
+.content {overflow: hidden;}
+
+.block-four__triangle {
+    width: 110%;
+    height: 120px;
+    background: #d2d2d2;
+    margin-top: 80px;
+    transform: rotate(-2deg);
+    overflow-x: hidden;
+}
 .block-four{
     display: flex;
     align-items: center;
-    justify-content: center; 
-    margin-top: 81px;
+    justify-content: center;
+    margin-top: -50px;
+    width: 100%;
+    background: #d2d2d2;
 }
 .block-four__slider{
     width: 640px;
-    background: lightgray;
-    /*height: 200px;*/
+    /*background: #d2d2d2;*/
     position: relative;
 }
 .slider .slick-slide {
@@ -350,9 +361,25 @@ a.make-a-call {
     height: 15px;
     margin: 5px;
     border-radius: 50%;
-    border: 1px solid #797979;
+    border: 1px solid #8a8a8a;
     background: white;
     outline: none;
+}
+.slick-dots .slick-active button {
+    background: #9b9b9b;
+}
+.quotes {
+    position: absolute;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    top: 80px;
+}
+
+.quotes i{
+    font-size: 50px;
+    color: white;
+    transform: rotate(180deg);
 }
 /* ===================================block-five============================== */
 .block-five{
@@ -484,28 +511,28 @@ a.button {
 /* ===============================footer===================================== */
 .footer{
     background: #eaeaea;
+    padding-top: 60px;
     padding-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.footer-triangle {
+    position: absolute;
+    top: -90px;
+    width: 100px;
+    height: 60px;
+    border: 50px solid white;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    box-sizing: border-box;
 }
 .footer__container{
-	margin-top: 60px;
-    width: 640px;
+    position: relative;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
 }
-.footer__menu-block li {
-	list-style-type: none;
-	margin-bottom: 10px;
-}
-.footer__menu-block a{        
-    color: #7d7d7d;
-    text-decoration: none;
-}
-.footer__menu-block li a:hover{
-	color: #aeaeae;
-	
-}
-
 .input{
     display: flex;
     align-items: center;
@@ -515,8 +542,105 @@ a.button {
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-right: 5px;
 }
+.footer-input {
+    border: 1px solid #bababa;
+    padding: 5px;
+    color: #bababa;
+    font-size: 10px;
+    border-radius: 3px;
+}
+.footer-right-block form {
+    width: 220px;
+}
+.footer-right-block input, .footer-right-block textarea, .footer-right-block button  {
+    display: block;
+    width: 100%;   
+    box-sizing: border-box;
+}
+.footer-right-block textarea {
+    height: 60px;
+}
+.footer-button {
+    background: #2a2a2a;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.cb-block {
+    display: flex;
+    height: 30px;   
+}
+.cb {
+    width: 25px;
+    position: relative;
+}
+.cb input[type=checkbox] {
+    opacity: 0;
+}
+.cb label {
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+.cb label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    background: transparent;
+    top: 3px;
+    left: 4px;
+    border: 2px solid #333;
+    border-top: none;
+    border-right: none;
 
+    transform: rotate(-45deg);
+}
+.cb label:hover::after {
+    opacity: 0.5;
+}
+.cb input[type=checkbox]:checked + label:after {
+    opacity: 1;
+    border: 2px solid #fff;    
+    border-top: none;
+    border-right: none;
+}
+.cb input[type=checkbox]:checked + label {
+    background: #000;
+}
+.cb-block p {
+    line-height: 18px;
+    font-size: 10px;
+}
+.footer__menu-block li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.footer__menu-block a{        
+    color: #7d7d7d;
+    text-decoration: none;
+}
+.footer__menu-block li a:hover{
+    color: #aeaeae;
+    
+}
+/* .footer-input {
+    margin-top: 36px;
+    margin-bottom: 33px;
+} */
 /* ======================================media================================ */
 
 /* @media (max-width: 900px) {

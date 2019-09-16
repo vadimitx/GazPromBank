@@ -199,6 +199,7 @@
                 </div>
             </div>
         </div>
+         <div class="block-four__triangle"></div>
         <div class="block-four">
             <div class="block-four__slider">
                 <div class="slider">
@@ -206,6 +207,7 @@
                     <div>Ipsum dolor sit amet, consectetur adipisicing elit. Excepturi necessitatibus ea repudiandae, asperiores eum earum aut vero. Quos eos nesciunt voluptas, optio repudiandae, tempore, eveniet non aspernatur repellat officia culpa!</div>
                     <div>Pariatur incidunt quasi natus quam voluptates quas, temporibus amet officiis facere delectus nulla magnam expedita obcaecati iste numquam cum. Qui eum, vitae, fugit autem, veritatis ut, deleniti accusantium possimus voluptas laborum ducimus?</div>
                 </div>
+                <div class="quotes"><i class="fas fa-quote-left"></i></div>
             </div>
         </div>
         <div class="block-five">
@@ -269,36 +271,48 @@
                 <a href="№" class="button">Все карточки</a>
             </div>
         </div>       
-        <div class="footer">
-        	<div class="footer__container">
-	            <div class="footer__left-block">
-	                <div class="footer__menu-block">
-	                    <ul>
-	                        <li><a href="#" class="btn">Главная</a></li>
-	                        <li><a href="#" class="btn">О компании</a></li>
-	                        <li><a href="#" class="btn">Услуги</a></li>
-	                        <li><a href="#" class="btn">Цены</a></li>
-	                        <li><a href="#" class="btn">Правила</a></li>
-	                        <li><a href="#" class="btn">Контакты</a></li>
-	                    </ul>
-	                </div>
-	                <div class="input">
-	                    <input type="Подписаться на объявления">
-	                    <i class="fas fa-envelope-open-text"></i>
-	                </div>
-	                <div class="footer-copyrighting">
-	                    <p>Все права защищены</p>
-	                    <p>|</p>
-	                    &copy;
-	                    <p>OOO "Ромашка"</p>
-	                </div>
-	            </div>
-	            <div class="footer-right-block">
-	                <input type="Подписаться на объявления">
-	                <input type="Подписаться на объявления">
-	                <input type=search placeholder="Введите текст для поиска">
-	            </div>
-        	</div>
+          <div class="footer">
+            <div class="footer__container">
+                <div class="footer-triangle"></div>
+                <div class="footer__left-block">
+                    <div class="footer__menu-block">
+                        <ul>
+                            <li><a href="#" class="btn">Главная</a></li>
+                            <li><a href="#" class="btn">О компании</a></li>
+                            <li><a href="#" class="btn">Услуги</a></li>
+                            <li><a href="#" class="btn">Цены</a></li>
+                            <li><a href="#" class="btn">Правила</a></li>
+                            <li><a href="#" class="btn">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input class="footer-input" placeholder="Подписаться на обновления">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <div class="footer-copyrighting">
+                        <p>Все права защищены</p>
+                        <p>|</p>
+                        &copy;
+                        <p>OOO "Ромашка"</p>
+                    </div>
+                </div>
+                <div class="footer-right-block">
+                    <form action="">
+                       <input class="footer-input" type="text" placeholder="Input field placeholder">
+                        <input class="footer-input" type="text" placeholder="Input field placeholder">
+                        <textarea class="footer-input" placeholder="Placeholder text"></textarea>
+                        <div class="cb-block">  
+                            <div class="cb">
+                                <input type="checkbox" value="1" id="cbInput" name="" />
+                                <label for="cbInput"></label>
+                            </div>
+                            <p>Согласен с условиями</p>
+                        </div>                        
+                        <button class="footer-button">Отправить</button>
+                    </form>
+                    
+                </div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -309,6 +323,8 @@
                 arrows: false,
                 dots: true,
                 adaptiveHeight: true,
+                fade: true,
+                autoplay: true,
             });
         });
     </script>
